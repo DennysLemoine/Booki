@@ -1,0 +1,106 @@
+* {
+    /* max-width: 1400px; */
+    font-family: 'Raleway', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    height: 44px;
+    padding: 0 50px 0 50px;
+    margin: 10px 0 50px 0;
+}
+
+#logo {
+    height: 20px;
+}
+
+.header_link a {
+    padding: 3.3rem 3rem 0 3rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    border-top: 2px transparent solid;
+}
+
+.header_link a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    transition: border-top .5s, color .5s;
+}
+
+.div_hebergement {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 3%;
+}
+
+.bloc_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.bloc_hebergement h2 {
+    width: 100%;
+}
+
+.bloc_hebergement a {
+    /* Couleur temporaire */
+    background-color: red;
+    width: 30%;
+}
+
+.bloc_populaire {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30%;
+}
+
+.header_bloc_populaire {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.section_activite h2 {
+    width: 100%;
+}
+
+.section_activite {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px 500px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
