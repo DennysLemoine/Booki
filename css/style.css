@@ -12,6 +12,7 @@ html {
 }
 
 .container {
+    width: 100%;
     max-width: var(--container);
     margin-left: auto;
     margin-right: auto;
@@ -23,8 +24,8 @@ html {
     justify-content: space-between;
     align-items: end;
     height: 44px;
-    padding: 0 50px 0 50px;
-    margin: 10px 0 50px 0;
+    padding: 0 5rem 0 5rem;
+    margin: 1rem 0 3rem 0;
 }
 
 #logo {
@@ -45,10 +46,74 @@ html {
     transition: border-top .5s, color .5s;
 }
 
+.bloc_search {
+    font-size: 1.6rem;
+}
+
+.search_bar {
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    padding: 0.5rem 0;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.bloc_search label {
+    background-color: #d9d9d9;
+    border-radius: 15px 0 0 15px;
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.bloc_search input {
+    border: none;
+    overflow: auto;
+    outline: none;
+    padding-left: 1.5rem;
+    font-weight: 700;
+}
+
+.bloc_filter {
+    display: flex;
+    font-weight: 700;
+    flex-wrap: wrap;
+    gap: 3%;
+    margin-bottom: 2rem;
+}
+
+.bloc_filter span {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.bloc_filter button {
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border-radius: 50px;
+}
+
+.fa-money-bill-wave {
+    color: #0065FC;
+}
+
+.fa-person {
+    color: #0065FC;
+}
+
+.fa-heart {
+    color: #0065FC;
+}
+
+.fa-dog {
+    color: #0065FC;
+}
+
+.bloc_filter i {
+    color: #0065FC;
+}
+
 .div_hebergement {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-right: auto;
     gap: 3%;
 }
 
@@ -83,20 +148,20 @@ html {
     align-items: end;
 }
 
-.section_activite h2 {
-    width: 100%;
-}
-
-.section_activite {
-    padding: 20px;
+.bloc_activite {
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.bloc_activite h2 {
+    width: 100%;
+}
+
 footer {
-    margin: 20px;
-    padding: 20px 500px 40px 40px;
+    margin: 2rem;
+    padding: 2rem 50rem 4rem 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -104,11 +169,11 @@ footer {
 footer div {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.5rem;
 }
