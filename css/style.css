@@ -50,33 +50,53 @@ html {
     font-size: 1.6rem;
 }
 
-.search_bar {
-    border: 1px solid #d9d9d9;
-    border-radius: 15px;
-    padding: 0.5rem 0;
+.bloc_search h1 {
+    font-size: 2.2rem;
+}
+
+.bloc_search form {
     margin: 1.5rem 0 2.5rem 0;
 }
 
 .bloc_search label {
     background-color: #d9d9d9;
     border-radius: 15px 0 0 15px;
-    padding: 1rem 1rem 1rem 1.5rem;
+    padding: 1rem 1rem 1.1rem 1.5rem;
 }
 
 .bloc_search input {
-    border: none;
+    border-top: 0.1rem #d9d9d9 solid;
+    border-right: transparent;
+    border-bottom: 0.1rem #d9d9d9 solid;
+    border-left: transparent;
     overflow: auto;
     outline: none;
-    padding-left: 1.5rem;
+    margin-right: -0.4rem;
+    padding: 0.7rem 0 0.7rem 1.5rem;
     font-weight: 700;
+}
+
+::placeholder { /* POUR COULEUR BARRE RECHERCHE | Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Si ouvert dans Firefox */
+}
+
+.bloc_search button {
+    font-weight: 700;
+    border: 0 transparent none;
+    border-radius: 0 15px 15px 0;
+    background: #0065FC;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    color: white;
+    cursor: pointer;
 }
 
 .bloc_filter {
     display: flex;
     font-weight: 700;
     flex-wrap: wrap;
-    gap: 3%;
-    margin-bottom: 2rem;
+    gap: 2%;
+    margin-bottom: 3rem;
 }
 
 .bloc_filter span {
@@ -86,8 +106,20 @@ html {
 }
 
 .bloc_filter button {
-    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border: 0.2rem #d9d9d9 solid;
     border-radius: 50px;
+    border-color: #d9d9d9;
+    color: black;
+    background: transparent;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+}
+
+.bloc_filter button:hover {
+    background-color: #DEEBFF;
+}
+
+.bloc_filter button:focus {
+    background-color: #DEEBFF;
 }
 
 .fa-money-bill-wave {
@@ -108,6 +140,22 @@ html {
 
 .bloc_filter i {
     color: #0065FC;
+}
+
+.text_informations {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.fa-info {
+    color: #0065FC;
+    width: 5px;
+    height: 13px;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border: 0.1rem #d9d9d9 solid;
+    border-radius: 50px;
 }
 
 .div_hebergement {
@@ -176,4 +224,10 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+/* EN ATTENTE | POUR CACHER LA LOUPE RECHERCHE */
+@media screen and (min-width: 992px) {
+    .fa-magnifying-glass {
+        display: none;
+    }
 }
