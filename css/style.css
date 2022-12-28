@@ -25,7 +25,7 @@ html {
     align-items: end;
     height: 44px;
     padding: 0 5rem 0 5rem;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 7.5rem 3rem 7.5rem;
 }
 
 #logo {
@@ -161,32 +161,36 @@ html {
 .div_hebergement {
     display: flex;
     justify-content: space-between;
-    padding-right: auto;
-    gap: 3%;
+    padding: 2rem;
+    gap: 5rem;
 }
 
 .bloc_hebergement {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 70%;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 1.6rem;
 }
 
-.bloc_hebergement h2 {
-    width: 100%;
+#hebergements {
+    font-size: 2.2rem;
+}
+
+.herbegement_a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
 }
 
 .bloc_hebergement a {
-    /* Couleur temporaire */
-    background-color: red;
-    width: 30%;
+    padding: 2rem 0 2rem 0;
+    width: 30rem;
+    border: 0.1rem transparent solid;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .bloc_populaire {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 30%;
+    width: 20%;
 }
 
 .header_bloc_populaire {
@@ -208,10 +212,15 @@ html {
 }
 
 footer {
-    margin: 2rem;
+    font-size: 1.6rem;
+    margin: 3rem 7.5rem 3rem 7.5rem;
     padding: 2rem 50rem 4rem 4rem;
     display: flex;
     justify-content: space-between;
+}
+
+footer h4 {
+    font-size: 1.8rem;
 }
 
 footer div {
@@ -225,6 +234,7 @@ footer ul {
     flex-direction: column;
     gap: 0.5rem;
 }
+
 /* EN ATTENTE | POUR CACHER LA LOUPE RECHERCHE */
 @media screen and (min-width: 992px) {
     .fa-magnifying-glass {
