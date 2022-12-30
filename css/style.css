@@ -7,8 +7,11 @@ html {
     font-size: 62.5%;
 }
 
-:root {
+body {
     --container: 1400px;
+    max-width: var(--container);
+    margin: 0 auto;
+    text-rendering: optimizeSpeed;
 }
 
 .container {
@@ -18,12 +21,20 @@ html {
     margin-right: auto;
 }
 
+h1 {
+    font-size: clamp(1.8rem, 1.5vw, 2.2rem);
+}
+
 h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 1.5vw, 2.2rem);
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 1.5vw, 1.6rem)
+}
+
+h4 {
+    font-size: clamp(1.8rem, 1.5vw, 1.6rem);
 }
 
 a:visited {
@@ -32,12 +43,10 @@ a:visited {
 
 .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: end;
     height: 44px;
-    padding: 0 50px 0 50px;
-    margin: 10px 75px 30px 75px;
+    margin-bottom: 30px;
 }
 
 #logo {
@@ -62,29 +71,30 @@ a:visited {
     font-size: 1.6rem;
 }
 
-.bloc_search h1 {
-    font-size: 2.2rem;
-}
-
 .bloc_search form {
+    display: flex;
+    height: 42px;
     margin: 15px 0 25px 0;
 }
 
 .bloc_search label {
-    background-color: #d9d9d9;
-    border-radius: 15px 0 0 15px;
-    padding: 10px 10px 11px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 12px 0 0 12px;
+    width: 40px;
+
 }
 
 .bloc_search input {
-    border-top: 1px #d9d9d9 solid;
+    border-top: 1px #f2f2f2 solid;
     border-right: transparent;
-    border-bottom: 1px #d9d9d9 solid;
+    border-bottom: 1px #f2f2f2 solid;
     border-left: transparent;
     overflow: auto;
     outline: none;
-    margin-right: -4px;
-    padding: 7px 0 7px 15px;
+    padding: 7px 15px 7px 15px;
     font-weight: 700;
 }
 
@@ -93,12 +103,15 @@ a:visited {
     opacity: 1; /* Si ouvert dans Firefox */
 }
 
-.bloc_search button {
+.bloc_search button:not(.bloc_filter button) {
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0 transparent none;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 12px 12px 0;
     background: #0065FC;
-    padding: 8px 10px 8px 10px;
+    padding: 20px;
     color: white;
     cursor: pointer;
 }
@@ -118,6 +131,10 @@ a:visited {
 }
 
 .bloc_filter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border: 0.2rem #d9d9d9 solid;
     border-radius: 50px;
     border-color: #d9d9d9;
