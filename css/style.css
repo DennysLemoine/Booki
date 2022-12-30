@@ -192,46 +192,47 @@ a:visited {
 }
 
 .bloc_hebergement {
-    padding: 20px 25px 30px 50px;
+    background-color: #f2f2f2;
+    padding: 35px 25px 30px 50px;
     border-radius: 20px;
     width: 72%;
     font-size: 1.6rem;
 }
 
-#hebergements {
-    font-size: 2.2rem;
+.bloc_hebergement h2 {
+    margin-bottom: 20px;
 }
 
 .hebergement_a {
-    padding: 20px 0 0 0;
-    margin-bottom: 45px;
+    display: grid;
     gap: 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
 }
 
 .hebergement_a a {
-    border: 5px sandybrown solid;
-    padding-bottom: 10px;
-    width: 270px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 0 10px 20px #737373;
-    object-fit: cover;
+    box-shadow: 0 10px 20px #D9D9D9;
+    padding: 3px;
 }
 
 .hebergement_a a img {
-    height: 80px;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    object-fit: cover;
 }
 
 .description_hebergement {
-    margin-left: 10px;
+    margin-left: 12px;
 }
 
-.fa-star {
+.stars {
     color: #0065FC;
-    height: 13px;
+}
+
+.star_grey {
+    color: #f2f2f2;
 }
 
 .bloc_hebergement .more {
@@ -239,14 +240,16 @@ a:visited {
 }
 
 .bloc_populaire {
-    width: 28%;
-    padding: 25px 20px 10px 20px;
+    background-color: #f2f2f2;
     border-radius: 20px;
+    width: 28%;
+    padding: 35px 25px 10px 25px
 }
 
 .header_bloc_populaire {
     display: flex;
     padding: 0 10px 0 10px;
+    margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -257,22 +260,32 @@ a:visited {
 }
 
 .populaire_a {
-    margin: 12px 0 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 140px);
+    gap: 35px;
 }
 
 .populaire_a a {
-    border: 5px sandybrown solid;
-    padding: 20px 0 20px 0;
-    width: 325px;
     height: 140px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 0 10px 20px #737373;
+    box-shadow: 0 10px 20px #D9D9D9;
+}
+
+.populaire_a figure {
+    display: flex;
+    padding: 3px;
+    height: 140px;
+}
+
+.populaire_a figcaption {
+    width: 70%;
+    padding: 10px 5px;
+}
+
+.populaire_a img {
+    border-radius: 20px 0 0 20px;
+    width: 30%;
     object-fit: cover;
 }
 
@@ -291,7 +304,6 @@ figure p {
     justify-content: space-between;
     height: 440px;
     border-radius: 20px;
-    background-color: #75c63b;
 }
 
 .bloc_activite_a a {
@@ -299,11 +311,12 @@ figure p {
     width: 270px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 0 10px 20px #737373;
+    box-shadow: 0 10px 20px #D9D9D9;
 }
 
 .bloc_activite_a a img {
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
     height: 380px;
     margin-bottom: 20px;
 }
@@ -313,9 +326,10 @@ figure p {
 }
 
 footer {
+    background-color: #f2f2f2;
     font-size: 1.6rem;
-    margin: 30px 75px 30px 75px;
-    padding: 20px 500px 40px 40px;
+    margin: 30px 0 30px 0;
+    padding: 20px 350px 40px 90px;
     display: flex;
     justify-content: space-between;
 }
