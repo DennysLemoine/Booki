@@ -7,16 +7,21 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --desktop: 1400px;
+    --laptop: 992px;
+    --tablet: 768px;
+    --mobile: 350px;
+}
+
 body {
-    --container: 1400px;
-    max-width: var(--container);
     margin: 0 auto;
     text-rendering: optimizeSpeed;
 }
 
 .container {
     width: 100%;
-    max-width: var(--container);
+    max-width: var(--desktop);
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,6 +51,9 @@ a:visited {
 }
 
 .header {
+    max-width: var(--container);
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -373,8 +381,23 @@ footer ul {
     gap: 5px;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    .container {
+        width: var(--laptop);
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .container {
+        width: var(--tablet);
+    }
+}
+
 /* EN ATTENTE | POUR CACHER LA LOUPE RECHERCHE */
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 768px) {
+    .container {
+        width: var(--mobile);
+    }
     .fa-magnifying-glass {
         display: none;
     }
