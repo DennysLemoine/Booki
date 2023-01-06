@@ -25,7 +25,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* TEST TEXT RESPONSIVE
 h1 {
     font-size: clamp(1.8rem, 1.5vw, 2.2rem);
 }
@@ -41,7 +41,7 @@ h3 {
 h4 {
     font-size: clamp(1.8rem, 1.5vw, 1.6rem);
 }
-
+*/
 a {
     color: black;
 }
@@ -51,7 +51,7 @@ a:visited {
 }
 
 .header {
-    max-width: var(--container);
+    max-width: var(--desktop);
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -357,10 +357,13 @@ figure p {
 }
 
 footer {
+    max-width: var(--desktop);
     background-color: #f2f2f2;
     font-size: 1.6rem;
     margin-top: 30px;
-    padding: 20px 350px 40px 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 350px 40px 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -380,25 +383,133 @@ footer ul {
     flex-direction: column;
     gap: 5px;
 }
+.fa-magnifying-glass {
+    display: none;
+}
 
 @media screen and (max-width: 1400px) and (min-width: 992px) {
     .container {
-        width: var(--laptop);
+        max-width: var(--laptop);
+    }
+    .header {
+        max-width: var(--laptop);
+    }
+    footer {
+        max-width: var(--laptop);
+    }
+    .bloc_activite_a {
+        gap: 40px;
     }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .container {
-        width: var(--tablet);
+        max-width: var(--tablet);
+    }
+    .header {
+        max-width: var(--tablet);
+    }
+    footer {
+        max-width: var(--tablet);
+    }
+    .div_hebergement {
+        flex-direction: column;
+    }
+    .bloc_hebergement {
+        width: 100%;
+    }
+    .bloc_populaire {
+        width: 100%;
+    }
+    .populaire_a {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+        padding-bottom: 30px;
+    }
+    .bloc_activite {
+        margin-top: 30px;
+    }
+    .bloc_activite_a {
+        gap: 40px
+    }
+    .bloc_activite_a a {
+        padding-bottom: 10px;
+    }
+    .bloc_activite_a a img {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    footer {
+        padding-right: 140px;
+        margin-top: 40px;
     }
 }
 
-/* EN ATTENTE | POUR CACHER LA LOUPE RECHERCHE */
 @media screen and (max-width: 768px) {
     .container {
-        width: var(--mobile);
+        max-width: var(--mobile);
+    }
+    .header {
+        max-width: var(--mobile);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 40px;
+    }
+    .bloc_search form {
+        justify-content: center;
+        margin: 30px 0 15px 0;
+    }
+    .bloc_filter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .button_1 {
+        grid-row-start: 2;
+    }
+    .button_2 {
+        grid-row-start: 3;
+    }
+    .bloc_filter button {
+        justify-content: flex-start;
+    }
+    footer {
+        max-width: var(--mobile);
     }
     .fa-magnifying-glass {
+        display: block;
+    }
+    .rechercher {
         display: none;
+    }
+    .div_hebergement {
+        flex-direction: column-reverse;
+
+    }
+    .bloc_populaire {
+        width: 100%;
+        border-radius: 0;
+    }
+    .bloc_hebergement {
+        width: 100%;
+        background-color: white;
+        padding: 0 10px 10px 10px;
+    }
+    .hebergement_a {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .bloc_hebergement .more {
+        display: none;
+    }
+    .bloc_activite {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 10px;
+
     }
 }
