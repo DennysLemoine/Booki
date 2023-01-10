@@ -29,25 +29,18 @@ body {
 }
 
 
-/*h1 {
-    font-size: clamp(1.8rem, 1.5vw, 2.2rem);
+h1 {
+    font-size: 2.2rem;
 }
 
 h2 {
-    font-size: clamp(1.8rem, 1.5vw, 2.2rem);
+    font-size: 2.2rem;
 }
 
 h3 {
-    font-size: clamp(1.4rem, 1.2vw, 1.6rem)
+    line-height: 1.8rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
 }
-
-p {
-    font-size: clamp(1.4rem, 1.5vw, 1.2rem)
-}
-
-h4 {
-    font-size: clamp(1.8rem, 1.5vw, 1.6rem);
-}*/
 
 a {
     color: black;
@@ -113,6 +106,7 @@ a:visited {
     outline: none;
     padding: 7px 15px 7px 15px;
     font-weight: 700;
+    font-size: 1.8rem;
 }
 
 ::placeholder { /* POUR COULEUR BARRE RECHERCHE | Chrome, Firefox, Opera, Safari 10.1+ */
@@ -145,6 +139,11 @@ a:visited {
     display: flex;
     align-items: center;
     font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.bloc_filter span {
+    font-size: 1.7rem;
 }
 
 .bloc_filter button {
@@ -154,7 +153,6 @@ a:visited {
     gap: 10px;
     border: 0.2rem solid #d9d9d9;
     border-radius: 50px;
-
     color: black;
     background: transparent;
     padding: 7px 15px 7px 15px;
@@ -201,11 +199,6 @@ a:visited {
     padding: 7px 12px 7px 12px;
     border: 0.1rem #d9d9d9 solid;
     border-radius: 50px;
-}
-
-h3 {
-    line-height: 1.8rem;
-    font-size: 1.6rem
 }
 
 .div_hebergement {
@@ -313,7 +306,7 @@ h3 {
 
 .fa-chart-line {
     color: #0065FC;
-    height: 15px;
+    height: 20px;
 }
 
 .populaire_a {
@@ -341,7 +334,7 @@ h3 {
 }
 
 figure p {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
 }
 
 .bloc_activite {
@@ -444,6 +437,14 @@ footer ul {
         width: 95%;
     }
 
+    h3 {
+        font-size: clamp(1.3rem, 1.65vw, 1.6rem);
+    }
+
+    figure p {
+        font-size: clamp(1.2rem, 1.55vw, 1.4rem);
+    }
+
     .div_hebergement {
         flex-direction: column;
     }
@@ -510,6 +511,14 @@ footer ul {
         width: 95%;
     }
 
+    h3 {
+        font-size: clamp(1.3rem, 4vw, 1.6rem);
+    }
+
+    figure p {
+        font-size: clamp(1.2rem, 3.75vw, 1.4rem);
+    }
+
     .header {
         flex-direction: column;
         justify-content: center;
@@ -554,8 +563,8 @@ footer ul {
     .bloc_filter {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
         justify-content: center;
+        gap: 10px;
     }
 
     .bloc_filter button {
@@ -589,9 +598,15 @@ footer ul {
     }
 
     .bloc_populaire {
-        padding: 20px 10px 20px 10px;
+        padding: 20px 10px 50px 10px;
         width: 100%;
         border-radius: 0;
+        box-shadow: 0 0 0 100vmax #f2f2f2;
+        clip-path: inset(0 -100vmax);
+    }
+
+    .populaire_a {
+        gap: 10px;
     }
 
     .populaire_a figure {
@@ -611,7 +626,7 @@ footer ul {
 
     .hebergement_a {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        gap: 20px;
     }
 
     .hebergement_a figure {
@@ -619,14 +634,21 @@ footer ul {
         min-height: 150px;
     }
 
-    .bloc_hebergement .more {
-        display: none;
+    .bloc_activite {
+        padding: 0 10px;
+    }
+
+    .bloc_activite h2 {
+        width: 110px;
     }
 
     .bloc_activite_a {
-        display: grid;
-        gap: 30px;
-        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    .bloc_hebergement .more {
+        display: none;
     }
 
     .bloc_activite_a figure {
@@ -635,18 +657,17 @@ footer ul {
     }
 
     .bloc_activite_a img {
-        height: calc(100% - 100px);
+        height: calc(100% - 60px);
     }
 
     .bloc_activite_a figcaption {
-        height: 100px;
+        height: 60px;
     }
 
     footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 35px;
         padding : 50px 0 70px 20px
-
     }
 
 }
