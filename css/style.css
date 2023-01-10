@@ -130,32 +130,44 @@ a:visited {
 .bloc_filter {
     display: flex;
     font-weight: 700;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 2%;
     margin-bottom: 30px;
 }
 
-.bloc_filter span {
+.button_filter {
     display: flex;
-    align-items: center;
+}
+
+.bloc_filter span {
     font-weight: 700;
     font-size: 1.8rem;
+    white-space: nowrap;
 }
 
 .bloc_filter span {
     font-size: 1.7rem;
 }
 
+.filter {
+    margin-right: 2rem;
+}
+
 .bloc_filter button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border: 0.2rem solid #d9d9d9;
     border-radius: 50px;
     color: black;
     background: transparent;
     padding: 7px 15px 7px 15px;
+    margin-right: 1.3vw;
+    cursor: pointer;
+}
+
+.bloc_filter button svg {
+    margin-right: 1rem;
 }
 
 .bloc_filter button:hover {
@@ -434,7 +446,7 @@ footer ul {
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     body {
-        width: 95%;
+        width: 97%;
     }
 
     h3 {
@@ -507,8 +519,9 @@ footer ul {
 }
 
 @media screen and (max-width: 767px) {
-    body {
-        width: 95%;
+
+    .container {
+        width: 90%;
     }
 
     h3 {
@@ -547,10 +560,6 @@ footer ul {
         border-bottom: 3px #0065FC solid;
     }
 
-    .text_button {
-        font-size: 1.1rem;
-    }
-
     .bloc_search {
         width: 100%;
     }
@@ -560,24 +569,36 @@ footer ul {
         margin: 30px 0 15px 0;
     }
 
-    .bloc_filter {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .button_filter {
+        display: flex;
         justify-content: center;
-        gap: 10px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .bloc_filter svg {
+        font-size: clamp(1.4rem, 3.5vw, 2rem);
+    }
+
+    .bloc_filter span {
+        width: 100%;
+        font-size: clamp(1.1rem, 3.2vw, 1.6rem);
     }
 
     .bloc_filter button {
         padding: 15px 10px;
-        width: 200px;
+        width: clamp(140px, 40vw, 195px);
+        margin-bottom: 15px;
+        margin-right: 2vw;
     }
 
-    .button_1 {
-        grid-row-start: 2;
+    .bloc_filter button:nth-child(even) {
+        margin-right: 0;
     }
 
-    .button_2 {
-        grid-row-start: 3;
+    .bloc_filter button span {
+        text-align: left;
     }
 
     .bloc_filter button {
@@ -594,7 +615,6 @@ footer ul {
 
     .div_hebergement {
         flex-direction: column-reverse;
-
     }
 
     .bloc_populaire {
