@@ -7,7 +7,6 @@
     <list default="true" id="c7c178b0-ce16-4692-83cb-8d56ea256796" name="Changes" comment="style: add more details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,14 @@
       <workItem from="1673120407357" duration="1616000" />
       <workItem from="1673252335978" duration="22343000" />
       <workItem from="1673338814178" duration="11000" />
-      <workItem from="1673338848324" duration="23240000" />
+      <workItem from="1673338848324" duration="23836000" />
+      <workItem from="1673433848736" duration="1196000" />
+      <workItem from="1673445085926" duration="752000" />
+      <workItem from="1673448396957" duration="1000" />
+      <workItem from="1673528001395" duration="768000" />
+      <workItem from="1673530821298" duration="466000" />
+      <workItem from="1673550182889" duration="917000" />
+      <workItem from="1673602858283" duration="955000" />
     </task>
     <task id="LOCAL-00001" summary="style: add more details">
       <created>1672152028067</created>
@@ -112,6 +118,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="style: add more details" />
