@@ -63,6 +63,7 @@ a:visited {
 
 #logo {
     height: 20px;
+    width: auto;
     object-fit: cover;
 }
 
